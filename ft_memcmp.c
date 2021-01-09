@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   memcmp.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:10:38 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:10:39 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/09 22:11:25 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/09 22:11:31 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-t_list *ft_lstnew(void *content)
+int ft_memcmp(const void* ptr1, const void* ptr2, size_t num)
 {
-	t_list *new;
+	unsigned char *s1;
+	unsigned char *s2;
+	int i;
 	
-	if(!(new = (t_list *)malloc(sizeof(t_list))))
-		return (0);
-	new->content = content;
-	new->next = NULL;
-	return (new);
+	s1 = (unsigned char *)b1;
+	s2 = (unsigned char *)b2;
+	i = 0;
+	while (s1[i] || s2[i] && i < num)
+	{
+		if (s1[i] > s2[i])
+			return (s1[i] - s2[i]);
+		else if (s1[i] < s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	return (0);
 }

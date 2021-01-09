@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/01/09 22:21:13 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/09 22:21:26 by dooh             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include <stdio.h>
-void *ft_memset(void *dest, int c, unsigned int count)
+
+void *ft_memset(void *dest, int c, unsigned int count)	
 {
 	unsigned int i;
 	
@@ -11,12 +23,4 @@ void *ft_memset(void *dest, int c, unsigned int count)
 		i++;
 	}
 	return (dest);
-}
-#include <stdio.h>
-int main()
-{
-	char a[10] = "asdaf";
-//	printf("%s", ft_memset(a, 97, 5));
-	ft_memset(a, 97, 5);
-	return 0;
 }

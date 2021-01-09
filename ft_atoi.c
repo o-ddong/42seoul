@@ -1,8 +1,22 @@
-int ft_atoi(const char* cStr)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/01/09 22:10:10 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/09 22:31:13 by dooh             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+int					ft_atoi(const char *cStr)
 {
-	int sign;
-	int value;
-	unsigned char *str;
+	int				sign;
+	int				value;
+	unsigned char	*str;
 
 	str = (unsigned char *)cStr;
 	sign = 1;

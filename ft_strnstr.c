@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/01/09 22:18:10 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/09 22:18:23 by dooh             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
 char *ft_strnstr(const char *big, const char *little, size_t len)
@@ -19,4 +30,3 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-

@@ -1,14 +1,14 @@
-//#include <stdio.h>
-//
-//size_t ft_strlen(const char* str)
-//{
-//	size_t i;
-//	
-//	i = 0;
-//	while (str[i])
-//		i++;
-//	return (i);
-//}
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/01/09 22:19:50 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/09 22:20:17 by dooh             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
 char *ft_strrchr(const char *str, int c)
@@ -24,11 +24,3 @@ char *ft_strrchr(const char *str, int c)
 	}
 	return (0);
 }
-//
-//int main()
-//{
-//	const char a[10] = "abcde";
-//	printf("%d %d", ft_strrchr(a, 97), ft_strrchr(a, 99));
-//	return 0;
-//}
-

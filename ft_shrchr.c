@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   shrchr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:10:38 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:10:39 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/09 22:13:19 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/09 22:13:20 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-t_list *ft_lstnew(void *content)
+char *ft_shrchr(const char *s, int c)
 {
-	t_list *new;
+	int i;
 	
-	if(!(new = (t_list *)malloc(sizeof(t_list))))
-		return (0);
-	new->content = content;
-	new->next = NULL;
-	return (new);
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			return (s + i);
+		i++;
+	}
+	return (0);
 }

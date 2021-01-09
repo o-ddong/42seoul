@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/01/09 22:17:39 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/09 22:17:48 by dooh             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 void *ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned int i;
@@ -9,14 +20,4 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 		i++;
 	}
 	return (dest);
-}
-
-#include <stdio.h>
-int main()
-{
-	char a[10] = "asdasd";
-	char b[10] = "aaaa";
-	const size_t N = 4;
-	printf("%d", memcpy(a, b, N));
-	return 0;
 }
