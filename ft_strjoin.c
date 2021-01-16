@@ -9,7 +9,8 @@
 /*   Updated: 2021/01/09 22:21:01 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+
+#include "libft.h"
 
 char *ft_strjoin(char const *s1, char const *s2)
 {

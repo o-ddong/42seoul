@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void *ft_calloc(size_t count,size_t size) // 할당할 변수의 갯수, 할당한 변수 하나의 크기 
+void *ft_calloc(size_t count,size_t size)
 {
 	void *p;
 	

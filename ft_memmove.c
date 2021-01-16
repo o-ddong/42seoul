@@ -9,6 +9,9 @@
 /*   Updated: 2021/01/09 22:19:11 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
 void					*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char *tmp_dest;
@@ -17,16 +20,16 @@ void					*ft_memmove(void *dest, const void *src, size_t n)
 	if (dest < src)
 	{
 		tmp_dest = (unsigned char *)dest;
-		tmp_src = (insigned char *)src;
+		tmp_src = (unsigned char *)src;
 		while (n--)
-			(*tmp_dest)-- = (*tmp_src)--;
+			*tmp_dest-- = *tmp_src--;
 	}
 	else
 	{
 		tmp_dest = (unsigned char *)dest + (n - 1);
-		tmp_src = (insigned char *)src + (n - 1);
+		tmp_src = (unsigned char *)src + (n - 1);
 		while (n--)
-			(*tmp_dest)-- = (*tmp_src)--;
+			*tmp_dest-- = *tmp_src--;
 	}
 	return (dest);
 }

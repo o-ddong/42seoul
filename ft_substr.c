@@ -9,6 +9,7 @@
 /*   Updated: 2021/01/09 22:20:44 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 
 char *ft_substr(char const *s, unsigned int start, size_t len)

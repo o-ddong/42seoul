@@ -9,7 +9,8 @@
 /*   Updated: 2021/01/09 22:21:26 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
+#include "libft.h"
 
 void *ft_memset(void *dest, int c, unsigned int count)	
 {

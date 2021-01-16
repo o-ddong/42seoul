@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int ft_strncmp(const char *string1, const char *string2, size_t count)
 {
 	size_t i;
@@ -19,10 +21,10 @@ int ft_strncmp(const char *string1, const char *string2, size_t count)
 	str1 = (unsigned char *)string1;
 	str2 = (unsigned char *)string2;
 	i = 0;
-	while (str1[i] || str2[i] || i < count)
+	while (string1[i] || string2[i] || i < count)
 	{
-		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+		if (string1[i] != string2[i])
+			return (string1[i] - string2[i]);
 		i++;
 	}
 	return (0);
