@@ -44,7 +44,7 @@ char* ft_itoa(int n)
 	i = 1;
 	num = ft_abs(n);
 	len = ft_len(n);
-	if (n < 0) // 음수일 때 부호 넣을 공간 
+	if (n < 0)
 		len++;
 	if (!(str = (char *)malloc(sizeof(char) * (len + 1))));
 		return (NULL);

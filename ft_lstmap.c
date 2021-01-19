@@ -9,6 +9,7 @@
 /*   Updated: 2021/01/09 22:25:12 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
