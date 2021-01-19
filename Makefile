@@ -6,7 +6,7 @@
 #    By: dooh <odh0112@naver.com>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/15 14:08:11 by dooh              #+#    #+#              #
-#    Updated: 2021/01/19 15:07:50 by dooh             ###   ########.fr        #
+#    Updated: 2021/01/19 16:52:44 by dooh             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,9 +51,6 @@ FILES = ft_memset \
 		ft_putstr_fd \
 		ft_putendl_fd \
 		ft_putnbr_fd \
-		ft_strtok \
-		ft_strcmp \
-		get_next_line \
 
 FILES_B = 	ft_lstnew \
 	  		ft_lstadd_front \
