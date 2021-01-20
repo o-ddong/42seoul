@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:10:24 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:10:26 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 19:22:34 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 22:39:47 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long long ft_abs(int n)
+long long		ft_abs(int n)
 {
-	long long num;
+	long long	num;
 
 	num = n;
 	if (n < 0)
@@ -22,10 +22,10 @@ long long ft_abs(int n)
 	return (num);
 }
 
-int ft_len(int n)
+int				ft_len(int n)
 {
-	long long num;
-	int len;
+	long long	num;
+	int			len;
 
 	len = 1;
 	num = ft_abs(n);
@@ -34,12 +34,12 @@ int ft_len(int n)
 	return (len);
 }
 
-char* ft_itoa(int n)
+char			*ft_itoa(int n)
 {
-	long long num;
-	int len;
-	char* str;
-	int i;
+	long long	num;
+	int			len;
+	char		*str;
+	int			i;
 
 	i = 1;
 	num = ft_abs(n);
@@ -60,4 +60,3 @@ char* ft_itoa(int n)
 	str[len] = 0;
 	return (str);
 }
-

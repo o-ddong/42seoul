@@ -5,20 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:16:49 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:17:16 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 19:15:58 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 19:16:54 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_calloc(size_t count,size_t size)
+void		*ft_calloc(size_t count, size_t size)
 {
-	void *p;
-	
+	void	*p;
+
 	p = malloc(count * size);
 	if (p == 0)
-		return 0;
+		return (0);
 	ft_bzero(p, count * size);
 	return (p);
 }

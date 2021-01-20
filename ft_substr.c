@@ -5,18 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:20:38 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:20:44 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/21 00:42:43 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/21 00:45:39 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char		*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *str;
-	size_t size;
-	
+	char	*str;
+	size_t	size;
+
 	if (s == 0)
 		return (0);
 	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))

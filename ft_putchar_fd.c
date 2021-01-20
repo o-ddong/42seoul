@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:22:56 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:22:59 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:16:27 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:16:48 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }

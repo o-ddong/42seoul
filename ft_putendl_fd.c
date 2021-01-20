@@ -5,16 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:24:12 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:24:14 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:17:13 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:17:27 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
-

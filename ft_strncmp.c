@@ -5,19 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:12:53 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:12:56 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:27:57 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:29:22 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strncmp(const char *string1, const char *string2, size_t count)
+int					ft_strncmp(const char *string1,
+		const char *string2, size_t count)
 {
-	size_t i;
-	unsigned char *str1;
-	unsigned char *str2;
-	
+	size_t			i;
+	unsigned char	*str1;
+	unsigned char	*str2;
+
 	str1 = (unsigned char *)string1;
 	str2 = (unsigned char *)string2;
 	i = 0;

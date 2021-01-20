@@ -5,41 +5,45 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:10:10 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:31:13 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 19:07:00 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/21 00:49:10 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int					ft_atoi(const char *cStr)
+int			ft_isspace(char c)
 {
-	int				sign;
-	int				value;
-	unsigned char	*str;
+	if (c == ' ' || c == '\n' || c == '\t' ||
+			c == '\v' || c == '\f' || c == '\r')
+		return (1);
+	else
+		return (0);
+}
 
-	str = (unsigned char *)cStr;
+int			ft_atoi(const char *str)
+{
+	long	nbr;
+	long	sign;
+	size_t	i;
+
+	nbr = 0;
 	sign = 1;
-	value = 0;
-	while (*str == '+' || *str == ' ' ||
-			*str == '\n' || *str == '\t' ||
-			*str == '\f' || *str == '\r')
-		str++;
-	while (*str == '-' || *str == '+')
+	i = 0;
+	while ((str[i] != '\0') && ft_isspace(str[i]) == 1)
+		i++;
+	if (str[i] == '-')
+		sign = -1;
+	if ((str[i] == '-') || (str[i] == '+'))
+		i++;
+	while ((str[i] != '\0') && ('0' <= str[i]) && (str[i] <= '9'))
 	{
-		if (*str == '-')
-			sign *= -1;
-		str++;
+		nbr = (nbr * 10) + (str[i] - '0');
+		if (nbr > 2147483647 && sign == 1)
+			return (-1);
+		if (nbr > 2147483648 && sign == -1)
+			return (0);
+		i++;
 	}
-	while (*str)
-	{
-		if (*str >= 48 && *str <= 57)
-		{
-			value = value * 10 + *str - '0';
-			str++;
-		}
-		else
-			break ;
-	}
-	return (sign * value);
+	return (sign * nbr);
 }

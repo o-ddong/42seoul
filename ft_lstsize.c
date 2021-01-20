@@ -5,17 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:11:58 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:12:00 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 22:57:54 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 22:58:44 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int		ft_lstsize(t_list *lst)
 {
-	int size;
-	
+	int	size;
+
 	size = 0;
 	while (lst != NULL)
 	{

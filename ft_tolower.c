@@ -5,17 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:23:34 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:23:36 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/21 00:43:26 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/21 00:45:12 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (('A' <= c && c <= 'Z'))
-        c = c - 'A' + 'a';
-    return c;
+		c = c - 'A' + 'a';
+	return (c);
 }
-

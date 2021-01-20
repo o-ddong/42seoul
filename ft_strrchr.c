@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:19:50 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:20:17 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:30:42 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:30:54 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
-	int i;
+	int	i;
 
 	i = ft_strlen(str);
 	while (i >= 0)

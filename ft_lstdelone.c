@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:21:42 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:21:45 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 22:45:30 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 22:45:46 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (lst == NULL)
 		return ;

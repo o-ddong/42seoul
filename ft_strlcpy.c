@@ -5,18 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:24:00 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:24:01 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:24:34 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:25:19 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
-	size_t src_len;
-	
+	size_t	i;
+	size_t	src_len;
+
 	src_len = 0;
 	i = 0;
 	while (src[src_len])

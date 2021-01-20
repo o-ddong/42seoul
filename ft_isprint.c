@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:24:54 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:24:56 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 19:21:31 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 19:21:45 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if ((32 <= c && c <= 127))
 		return (1);
-	return 0;
+	return (0);
 }

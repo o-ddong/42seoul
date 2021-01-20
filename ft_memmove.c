@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:19:05 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:19:11 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:14:56 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:15:30 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void					*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char *tmp_dest;
-	unsigned char *tmp_src;
-	
+	unsigned char		*tmp_dest;
+	unsigned char		*tmp_src;
+
 	if (dest < src)
 	{
 		tmp_dest = (unsigned char *)dest;

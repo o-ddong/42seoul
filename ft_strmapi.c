@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:11:01 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:11:03 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:26:31 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:27:39 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char* str)
+size_t		ft_strlen(const char *str)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])
@@ -22,11 +22,11 @@ size_t ft_strlen(const char* str)
 	return (i);
 }
 
-char* ft_strmapi(char const* s, char (*f)(unsigned int, char))
+char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char* str;
-	size_t i;
-	size_t len;
+	char	*str;
+	size_t	i;
+	size_t	len;
 
 	i = 0;
 	if (s == 0)

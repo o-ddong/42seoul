@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:24:46 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:24:47 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 19:20:56 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 19:21:09 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (('0' <= c && c <= '9'))
 		return (1);
-	return 0;
+	return (0);
 }

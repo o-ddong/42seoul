@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:17:27 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:17:29 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 22:42:54 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 22:43:32 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (lst == NULL || new == NULL)
 		return ;

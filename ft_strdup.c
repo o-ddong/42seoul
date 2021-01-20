@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:19:29 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:19:32 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:22:19 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:22:34 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *src)
+char		*ft_strdup(const char *src)
 {
 	int		len;
 	char	*p;

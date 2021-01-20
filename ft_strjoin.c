@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/09 22:20:56 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/09 22:21:01 by dooh             ###   ########.fr       */
+/*   Created: 2021/01/20 23:22:59 by dooh              #+#    #+#             */
+/*   Updated: 2021/01/20 23:23:13 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char		*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	str_len;
 	char	*str;
