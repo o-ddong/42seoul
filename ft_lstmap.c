@@ -6,7 +6,7 @@
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 22:53:27 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/20 22:54:30 by dooh             ###   ########.fr       */
+/*   Updated: 2021/01/21 14:28:00 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 
 	if (lst == NULL || f == NULL || del == NULL)
-		return ;
+		return (NULL);
 	if (!(new = (t_list *)malloc(sizeof(t_list))))
-		return ;
+		return (NULL);
 	while (lst != NULL)
 	{
 		f(lst->content);

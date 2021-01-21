@@ -6,7 +6,7 @@
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 23:02:31 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/20 23:04:10 by dooh             ###   ########.fr       */
+/*   Updated: 2021/01/21 14:35:23 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,9 @@ int					ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 	s1 = (unsigned char *)ptr1;
 	s2 = (unsigned char *)ptr2;
 	i = 0;
-	while ((s1[i] || s2[i]) && i < num)
+	while (num--)
 	{
-		if (s1[i] > s2[i])
-			return (s1[i] - s2[i]);
-		else if (s1[i] < s2[i])
+		if (s1[i] != s2[i])
 			return (s1[i] - s2[i]);
 		i++;
 	}

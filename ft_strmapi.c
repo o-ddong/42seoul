@@ -6,21 +6,11 @@
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 23:26:31 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/20 23:27:39 by dooh             ###   ########.fr       */
+/*   Updated: 2021/01/21 13:45:34 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t		ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
 
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

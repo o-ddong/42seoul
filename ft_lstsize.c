@@ -6,7 +6,7 @@
 /*   By: dooh <dooh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 22:57:54 by dooh              #+#    #+#             */
-/*   Updated: 2021/01/20 22:58:44 by dooh             ###   ########.fr       */
+/*   Updated: 2021/01/21 13:37:47 by dooh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_lstsize(t_list *lst)
 	size = 0;
 	while (lst != NULL)
 	{
-		lst = new->next;
+		lst = lst->next;
 		size++;
 	}
 	return (size);
